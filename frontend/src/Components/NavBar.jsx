@@ -29,18 +29,18 @@ function NavBar() {
           <NavDropdown.Item as={Link} to="/social-media-campaigns">Social Media Campaigns</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/branding">Branding</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/advertising">Advertising</NavDropdown.Item>
-<NavDropdown.Item as={Link} to="/package-design">Package Design</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="/package-design">Package Design</NavDropdown.Item>
 
-                         </NavDropdown>
+          </NavDropdown>
             
             <NavDropdown title="WE" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Ariussoft Infotech Pvt Ltd</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Arius Web Studio</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Think Thick</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Host Station</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Core Team</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Testimonials </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Insights</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/ariussoft-infotech">Ariussoft Infotech Pvt Ltd</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/arius-web-studio">Arius Web Studio</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/think-thick">Think Thick</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/host-station">Host Station</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/core-team">Core Team</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/testimonials">Testimonials</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/insights">Insights</NavDropdown.Item>
             </NavDropdown>
             
             <NavDropdown title="DO" id="collapsible-nav-dropdown">
