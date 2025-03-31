@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import  NavBar  from './Components/NavBar.jsx'
+import  NavBar  from './Components/NavBar.jsx';
+import Carousel from './Components/Carousel.jsx';
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -14,6 +15,7 @@ function App() {
    
     <Router>
     <NavBar/>
+    <Carousel/>
 
     </Router> 
     </>
