@@ -1,8 +1,6 @@
 import React from 'react';
 import './css/Banner.css';
 import Contactform from '../Components/ContactForm.jsx';
-import FAQ from '../Components/FAQ.jsx';
-
 
 
 function WebHosting(){
