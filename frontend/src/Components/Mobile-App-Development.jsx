@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/Banner.css';
 import Contactform from '../Components/ContactForm.jsx';
-
+import FAQ from './FAQ.jsx';
 
 
 function MobileAppDevelopment(){
@@ -45,7 +45,7 @@ function MobileAppDevelopment(){
         <p>Robust security features to protect data and ensure compliance.</p>
          </ul>
       <h3 className="heading">FAQ</h3>
-   
+      <FAQ/>
    </div>
    <Contactform/>
    
