@@ -10,6 +10,7 @@ import WebHosting from './Components/Web-Hosting.jsx';
 import DigitalMarketing from './Components/Digital-Marketing.jsx';
 import Branding from './Components/Branding.jsx';
 import Advertising from './Components/Advertising.jsx';
+import PackageDesign from './Components/Package-Design.jsx';
 import './App.css'
 import Home from './pages/Home'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -38,6 +39,7 @@ function App() {
     <Route path="/digital-marketing"element={<DigitalMarketing/>}/>
     <Route path="/branding"element={<Branding/>}/>
     <Route path="/advertising"element={<Advertising/>}/>
+    <Route path="/package-design"element={<PackageDesign/>}/>
     </Routes>
     </Router> 
     </>
