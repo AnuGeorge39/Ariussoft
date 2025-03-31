@@ -5,6 +5,7 @@ import MobileAppDevelopment from './Components/Mobile-App-Development.jsx';
 import WebSiteDesign from './Components/WebSite-Design.jsx';
 import WebApplicationDevelopment from './Components/Web-Application-Development.jsx';
 import ECommerceWebsiteDevelopment from './Components/E-commerce-Website-Development.jsx';
+import SearchEngineOptimization from './Components/Search-Engine-Optimization.jsx';
 import './App.css'
 import Home from './pages/Home'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -28,6 +29,7 @@ function App() {
     <Route path ="/website-design"element={<WebSiteDesign/>}/>
     <Route path="/webapplication-development"element={<WebApplicationDevelopment/>}/>
     <Route path="/e-commerece-website-development"element={<ECommerceWebsiteDevelopment/>}/>
+    <Route path="/search-engine-optimization"element={<SearchEngineOptimization/>}/>
     </Routes>
     </Router> 
     </>
