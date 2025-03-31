@@ -3,6 +3,7 @@ import  NavBar  from './Components/NavBar.jsx';
 import Carousel from './Components/Carousel.jsx';
 import Aboutus from './Components/About_us.jsx';
 import Services from './Components/Services.jsx';
+import Clients from './Components/Clients.jsx';
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -20,6 +21,7 @@ function App() {
     <Carousel/>
     <Aboutus/>
     <Services/>
+    <Clients/>
 
     </Router> 
     </>
