@@ -8,6 +8,7 @@ import ECommerceWebsiteDevelopment from './Components/E-commerce-Website-Develop
 import SearchEngineOptimization from './Components/Search-Engine-Optimization.jsx';
 import WebHosting from './Components/Web-Hosting.jsx';
 import DigitalMarketing from './Components/Digital-Marketing.jsx';
+import Branding from './Components/Branding.jsx';
 import './App.css'
 import Home from './pages/Home'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -34,6 +35,7 @@ function App() {
     <Route path="/search-engine-optimization"element={<SearchEngineOptimization/>}/>
     <Route path="/web-hosting"element={<WebHosting/>}/>
     <Route path="/digital-marketing"element={<DigitalMarketing/>}/>
+    <Route path="/branding"element={<Branding/>}/>
     </Routes>
     </Router> 
     </>
