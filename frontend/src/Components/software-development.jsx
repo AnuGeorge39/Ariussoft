@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/Banner.css';
-import Contactform from '../Components/ContactForm.jsx';
-import FAQ from '../Components/FAQ.jsx';
+
+
 
 
 
@@ -46,9 +46,9 @@ function SoftwareDevelopment() {
         <p>Software that works across desktops, web, and mobile platforms.</p>
       </ul>
       <h3 className="heading">FAQ</h3>
-   <FAQ/>
+   
    </div>
-    <Contactform/>
+    
     </>
    
   );

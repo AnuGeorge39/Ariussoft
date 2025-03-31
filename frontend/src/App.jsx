@@ -1,11 +1,8 @@
 import { useState } from 'react'
 import  NavBar  from './Components/NavBar.jsx';
-import Carousel from './Components/Carousel.jsx';
-import Aboutus from './Components/About_us.jsx';
-import Services from './Components/Services.jsx';
-import Clients from './Components/Clients.jsx';
-import Testimonials from './Components/Testimonials.jsx';
+import SoftwareDevelopment from './Components/software-development.jsx';
 import './App.css'
+import Home from './pages/Home'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
@@ -18,13 +15,12 @@ function App() {
     <>
    
     <Router>
+     
     <NavBar/>
-    <Carousel/>
-    <Aboutus/>
-    <Services/>
-    <Clients/>
-    <Testimonials/>
-
+    <Routes>
+    <Route path='/' element={<Home/>}/>
+    <Route path="/software-development" element={<SoftwareDevelopment />} />
+    </Routes>
     </Router> 
     </>
   )

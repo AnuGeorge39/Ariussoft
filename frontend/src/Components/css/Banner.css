@@ -1,0 +1,23 @@
+.banner {
+    background-image: url("../assets/Images/im2.jpg") !important;
+      height: 500px !important; 
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      text-align: center !important;
+      position: relative !important;
+    }
+    
+    .banner-content {
+      /*background: rgba(0, 0, 0, 0.5) !important; /* Dark overlay for readability */
+      padding: 20px !important;
+      border-radius: 10px !important;
+    }
+    .Software-development-content{
+      margin-left:5%!important;
+    }
+    .heading{
+      color: blueviolet !important;
+      
+    }
+    
