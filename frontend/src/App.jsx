@@ -15,6 +15,7 @@ import AriussoftInfotech from './Components/Ariussoft-Infotech.jsx';
 import AriusWebStudio from './Components/Arius-Web-Studio.jsx';
 import ThinkThick from './Components/Think-Thick.jsx';
 import HostStation from './Components/Host-Station.jsx';
+import CoreTeam from './Components/Core-Team.jsx';
 import './App.css'
 import Home from './pages/Home'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -48,6 +49,7 @@ function App() {
     <Route path="/arius-web-studio"element={<AriusWebStudio/>}/>
     <Route path="/think-thick"element={<ThinkThick/>}/>
     <Route path="/host-station"element={<HostStation/>}/>
+    <Route path="/core-team"element={<CoreTeam/>}/>
     </Routes>
     </Router> 
     </>
