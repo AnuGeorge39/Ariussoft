@@ -12,6 +12,7 @@ import Branding from './Components/Branding.jsx';
 import Advertising from './Components/Advertising.jsx';
 import PackageDesign from './Components/Package-Design.jsx';
 import AriussoftInfotech from './Components/Ariussoft-Infotech.jsx';
+import AriusWebStudio from './Components/Arius-Web-Studio.jsx';
 import './App.css'
 import Home from './pages/Home'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -42,6 +43,7 @@ function App() {
     <Route path="/advertising"element={<Advertising/>}/>
     <Route path="/package-design"element={<PackageDesign/>}/>
     <Route path="/ariussoft-infotech"element={<AriussoftInfotech/>}/>
+    <Route path="/arius-web-studio"element={<AriusWebStudio/>}/>
     </Routes>
     </Router> 
     </>
