@@ -1,0 +1,30 @@
+.custom-card {
+    width: 30% !important; 
+    height: 300px !important; 
+    margin: 10px !important; 
+  }
+  
+  
+  .custom-card .card-body {
+    height: 150px !important; 
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important; /* Align the button and text */
+  }
+  
+  .d-flex {
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px; 
+  }
+
+  .testimonials{
+    text-align: center !important;
+    font-size: 250% !important;
+    color: blueviolet !important;
+
+}
+.custom-card .card-title {
+    font-size: 90% !important;
+    padding-left: 200px !important;
+  }
