@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/Banner.css';
+import Contactform from '../Components/ContactForm.jsx';
 
 
 
@@ -48,6 +49,7 @@ function SoftwareDevelopment() {
       <h3 className="heading">FAQ</h3>
    
    </div>
+   <Contactform/>
     
     </>
    
