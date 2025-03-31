@@ -1,0 +1,38 @@
+
+.custom-card {
+    width: 23% !important; 
+    height: 500px !important; 
+    margin: 5px !important; 
+  }
+  
+  .custom-card .card-img-top {
+    height: 200px !important; 
+   object-fit: cover !important; 
+  }
+  
+  .custom-card .card-body {
+    height: 150px !important; 
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important; /* Align the button and text */
+  }
+  
+  .d-flex {
+    display: flex !important;
+    justify-content: space-between !important; /* Distribute the cards evenly */
+    gap: 10px !important; 
+  }
+
+  .services{
+    text-align: center !important;
+    font-size: 250% !important;
+    color: blueviolet !important;
+
+}
+.custom-card .card-Title {
+  height: 150px !important; 
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important; /* Align the button and text */
+}
+  
