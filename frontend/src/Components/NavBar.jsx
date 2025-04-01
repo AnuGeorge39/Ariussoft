@@ -53,7 +53,7 @@ function NavBar() {
             </NavDropdown>
             
             <NavDropdown title="YOU" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Contact Us</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="/contact">Contact Us</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Feedback</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Get a Quote</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/blog">Blog</NavDropdown.Item>
