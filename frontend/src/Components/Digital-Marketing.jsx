@@ -1,7 +1,8 @@
 import React from 'react';
 import './css/Banner.css';
 import Contactform from '../Components/ContactForm.jsx';
-import FAQ from '../Components/FAQ.jsx';
+import BannerImage from "../assets/Images/img2.jpg";
+
 
 
 
@@ -10,6 +11,7 @@ function DigitalMarketing(){
     <>
     
      <div className="banner">
+        <img src={BannerImage} className="banner" alt="bannar image " />
       <div className="banner-content">
         <h1>Digital Marketing</h1>
         <p>The use of digital channels, platforms, and technologies to promote and advertise products, services, or brands to consumers and businesses.</p>

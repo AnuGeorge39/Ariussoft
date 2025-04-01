@@ -2,6 +2,8 @@ import React from 'react';
 import './css/Banner.css';
 import Contactform from '../Components/ContactForm.jsx';
 import FAQ from '../Components/FAQ.jsx';
+import BannerImage from "../assets/Images/img4.jpg";
+
 
 
 
@@ -10,6 +12,7 @@ function WebSiteDesign(){
     <>
     
      <div className="banner">
+      <img src={BannerImage} className="banner" alt="bannar image " />
       <div className="banner-content">
         <h1>WebSite Design</h1>
         <p>process of creating software applications that run on mobile devices, such as smartphones and tablets. These apps are designed to provide specific functionalities to users, making use of the mobile device's capabilities, including sensors, cameras, location, and more.</p>

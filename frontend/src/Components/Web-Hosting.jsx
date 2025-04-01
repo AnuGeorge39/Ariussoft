@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/Banner.css';
 import Contactform from '../Components/ContactForm.jsx';
+import BannerImage from "../assets/Images/img3.jpg";
 
 
 function WebHosting(){
@@ -8,6 +9,7 @@ function WebHosting(){
     <>
     
      <div className="banner">
+      <img src={BannerImage} className="banner" alt="bannar image " />
       <div className="banner-content">
         <h1>Web Hosting</h1>
         <p>Service that allows individuals, businesses, and organizations to make their websites accessible on the internet.</p>

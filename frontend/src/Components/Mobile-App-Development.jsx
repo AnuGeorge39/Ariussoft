@@ -2,6 +2,7 @@ import React from 'react';
 import './css/Banner.css';
 import Contactform from '../Components/ContactForm.jsx';
 import FAQ from './FAQ.jsx';
+import BannerImage from "../assets/Images/img2.jpg";
 
 
 function MobileAppDevelopment(){
@@ -9,6 +10,7 @@ function MobileAppDevelopment(){
     <>
     
      <div className="banner">
+      <img src={BannerImage} className="banner" alt="bannar image " />
       <div className="banner-content">
         <h1>Mobile App Development</h1>
         <p>Process of designing, creating, testing, and maintaining software applications that are intended to run on mobile devices, such as smartphones and tablets.</p>

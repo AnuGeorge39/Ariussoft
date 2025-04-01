@@ -2,6 +2,7 @@ import React from 'react';
 import './css/Banner.css';
 import Contactform from '../Components/ContactForm.jsx';
 import FAQ from './FAQ.jsx';
+import BannerImage from "../assets/Images/img2.jpg";
 
 
 
@@ -11,6 +12,7 @@ function SoftwareDevelopment() {
     <>
     
      <div className="banner">
+     <img src={BannerImage} className="banner" alt="bannar image " />
       <div className="banner-content">
         <h1>Software Development</h1>
         <p>Software development is the process of designing, creating, testing, and maintaining software applications to meet specific needs. It involves writing code, debugging errors, and improving functionality over time..</p>

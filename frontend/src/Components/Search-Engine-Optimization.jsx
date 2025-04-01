@@ -2,6 +2,8 @@ import React from 'react';
 import './css/Banner.css';
 import Contactform from '../Components/ContactForm.jsx';
 import FAQ from '../Components/FAQ.jsx';
+import BannerImage from "../assets/Images/img2.jpg";
+
 
 
 
@@ -10,6 +12,7 @@ function SearchEngineOptimization(){
     <>
     
      <div className="banner">
+      <img src={BannerImage} className="banner" alt="bannar image " />
       <div className="banner-content">
         <h1>Search Engine Optimization</h1>
         <p>Process of improving a website’s visibility on search engines like Google, Bing, and Yahoo.</p>

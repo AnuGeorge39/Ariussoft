@@ -2,6 +2,7 @@ import React from 'react';
 import './css/Banner.css';
 import Contactform from '../Components/ContactForm.jsx';
 import FAQ from '../Components/FAQ.jsx';
+import BannerImage from "../assets/Images/img2.jpg";
 
 
 
@@ -10,6 +11,7 @@ function ECommerceWebsiteDevelopment(){
     <>
     
      <div className="banner">
+      <img src={BannerImage} className="banner" alt="bannar image " />
       <div className="banner-content">
         <h1>E-Commerce Website Development</h1>
         <p>process of creating an online platform where businesses can sell products or services to customers over the internet.</p>
