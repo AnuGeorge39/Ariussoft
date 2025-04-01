@@ -26,7 +26,6 @@ function NavBar() {
           <NavDropdown.Item as={Link} to="/search-engine-optimization">Search Engine Optimization</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/web-hosting">Web Hosting</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/digital-marketing">Digital Marketing</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to="/social-media-campaigns">Social Media Campaigns</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/branding">Branding</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/advertising">Advertising</NavDropdown.Item>
           <NavDropdown.Item as={Link} to="/package-design">Package Design</NavDropdown.Item>

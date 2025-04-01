@@ -1,13 +1,14 @@
 import React from 'react';
 import './css/Banner.css';
 import Contactform from '../Components/ContactForm.jsx';
-
+import BannerImage from "../assets/Images/img2.jpg";
 
 function Branding(){
   return (
     <>
     
      <div className="banner">
+        <img src={BannerImage} className="banner" alt="bannar image " />
       <div className="banner-content">
         <h1>Branding</h1>
         <p>The process of creating and establishing a unique identity for a product, service, or company</p>

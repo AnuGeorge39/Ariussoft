@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/Banner.css';
 import Contactform from '../Components/ContactForm.jsx';
+import BannerImage from "../assets/Images/img2.jpg";
 
 
 function PackageDesign(){
@@ -8,6 +9,7 @@ function PackageDesign(){
     <>
     
      <div className="banner">
+        <img src={BannerImage} className="banner" alt="bannar image " />
       <div className="banner-content">
         <h1>Package Design</h1>
         <p>Art and process of creating the visual and structural aspects of a product's packaging.</p>

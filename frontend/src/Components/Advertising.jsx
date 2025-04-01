@@ -1,13 +1,14 @@
 import React from 'react';
 import './css/Banner.css';
 import Contactform from '../Components/ContactForm.jsx';
-
+import BannerImage from "../assets/Images/img4.jpg";
 
 function Advertising(){
   return (
     <>
     
      <div className="banner">
+        <img src={BannerImage} className="banner" alt="bannar image " />
       <div className="banner-content">
         <h1>Advertising</h1>
         <p> It is a form of communication aimed at persuading an audience to take a specific action, usually to purchase a product, service, or idea. </p>
