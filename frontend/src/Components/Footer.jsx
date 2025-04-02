@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Nav } from 'react-bootstrap';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'; // Social media icons from react-icons
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'; 
+import Services from './Services';
 
 function Footer() {
   return (
@@ -16,8 +17,8 @@ function Footer() {
           <Col md={4}>
             <h5>Quick Links</h5>
             <Nav className="flex-column">
-              <Nav.Link href="/services" className="text-light">Services</Nav.Link>
-              <Nav.Link href="/contact" className="text-light">Contact</Nav.Link>
+            <Nav.Link href="#services" className="text-light">Services</Nav.Link>
+            <Nav.Link href="/contact" className="text-light">Contact</Nav.Link>
               <Nav.Link href="/about" className="text-light">About</Nav.Link>
             </Nav>
           </Col>
@@ -41,7 +42,7 @@ function Footer() {
         </Row>
         <Row className="mt-4">
           <Col className="text-center">
-            <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+            <p>&copy; 2025 Ariussoft Infotech. All Rights Reserved.</p>
           </Col>
         </Row>
       </Container>

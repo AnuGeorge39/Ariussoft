@@ -18,6 +18,7 @@ import HostStation from './Components/Host-Station.jsx';
 import CoreTeam from './Components/Core-Team.jsx';
 import Testimonialswe from './Components/Testimonials-we.jsx';
 import ContactYou from './Components/Contact-You.jsx';
+import ContactForm from './Components/ContactForm.jsx';
 import './App.css'
 import Home from './pages/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -54,6 +55,7 @@ function App() {
     <Route path="/core-team"element={<CoreTeam/>}/>
     <Route path="/testimonials"element={<Testimonialswe/>}/>
     <Route path="/contact"element={<ContactYou/>}/>
+    <Route path='/contactform' element={<ContactForm/>}/>
     </Routes>
     </Router> 
     </>

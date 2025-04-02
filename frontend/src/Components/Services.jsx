@@ -15,6 +15,7 @@ function Services() {
   };
   return (
     <div className="container mt-5">
+      <section id="services">
       <Card.Title className="services">Our Services</Card.Title>
       <Carousel>
         {/* Carousel Item 1 */}
@@ -23,6 +24,7 @@ function Services() {
             <Card className="custom-card">
               <Card.Img variant="top" src={Slide_1} />
               <Card.Body>
+                
                 <h5>SEO Services</h5>
                 <Card.Text>
                   Ariussoft enhances online visibility with targeted SEO strategies, including keyword optimization and link building.
@@ -111,6 +113,7 @@ function Services() {
 
         {/* Repeat similarly for other Carousel Items */}
       </Carousel>
+      </section>
     </div>
   );
 }

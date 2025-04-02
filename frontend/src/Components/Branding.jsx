@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/Banner.css';
 import Contactform from '../Components/ContactForm.jsx';
-import BannerImage from "../assets/Images/img2.jpg";
+import BannerImage from "../assets/Images/img4.jpg";
 
 function Branding(){
   return (
