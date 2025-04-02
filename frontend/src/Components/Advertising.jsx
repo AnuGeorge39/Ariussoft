@@ -2,6 +2,7 @@ import React from 'react';
 import './css/Banner.css';
 import Contactform from '../Components/ContactForm.jsx';
 import BannerImage from "../assets/Images/img4.jpg";
+import Footer from './Footer.jsx';
 
 function Advertising(){
   return (
@@ -36,6 +37,7 @@ function Advertising(){
          </ul>
    </div>
     <Contactform/>
+    <Footer/>
     </>
    
   );

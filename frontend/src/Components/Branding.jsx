@@ -2,6 +2,7 @@ import React from 'react';
 import './css/Banner.css';
 import Contactform from '../Components/ContactForm.jsx';
 import BannerImage from "../assets/Images/img4.jpg";
+import Footer from './Footer.jsx';
 
 function Branding(){
   return (
@@ -50,6 +51,7 @@ function Branding(){
       </ul>
    </div>
     <Contactform/>
+    <Footer/>
     </>
    
   );
