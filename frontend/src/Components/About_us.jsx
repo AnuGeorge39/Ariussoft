@@ -5,6 +5,7 @@ import './css/About_us.css';
 
 function Aboutus() {
   return (
+    <section id="aboutus">
     <Card className="d-flex flex-row">
     
       <Card.Img 
@@ -29,6 +30,7 @@ function Aboutus() {
         </Card.Text>
       </Card.Body>
     </Card>
+    </section>
   );
 }
 

@@ -3,6 +3,7 @@ import './css/Banner.css';
 import Contactform from '../Components/ContactForm.jsx';
 import FAQ from './FAQ.jsx';
 import BannerImage from "../assets/Images/img2.jpg";
+import Footer from './Footer.jsx';
 
 
 
@@ -52,7 +53,7 @@ function SoftwareDevelopment() {
       <FAQ/>
    </div>
    <Contactform/>
-    
+   <Footer/>
     </>
    
   );

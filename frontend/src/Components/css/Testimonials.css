@@ -1,11 +1,11 @@
-.custom-card {
+.custom-cards-testimonials {
     width: 30% !important; 
-    height: 300px !important; 
-    margin: 10px !important; 
+    height: 330px !important; 
+    margin: 13px !important; 
   }
   
   
-  .custom-card .card-body {
+  .custom-cards-testimonials .card-body {
     height: 150px !important; 
     display: flex !important;
     flex-direction: column !important;
@@ -24,7 +24,7 @@
     color: blueviolet !important;
 
 }
-.custom-card .card-title {
+.custom-cards-testimonials .card-title {
     font-size: 90% !important;
-    padding-left: 100px !important;
+    padding-left: 180px !important;
   }

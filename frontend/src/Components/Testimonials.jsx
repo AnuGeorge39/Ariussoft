@@ -15,7 +15,7 @@ function Testimonials() {
         {/* Carousel Item 1 */}
         <Carousel.Item>
           <div className="d-flex justify-content-between">
-            <Card className="custom-card">
+            <Card className="custom-cards-testimonials">
              
               <Card.Body>
                 
@@ -29,7 +29,7 @@ function Testimonials() {
               <Card.Title>Eldhose Vidyan</Card.Title>
               <Card.Title>St. Paul's Ayurveda</Card.Title>
             </Card>
-            <Card className="custom-card">
+            <Card className="custom-cards-testimonials">
               
               <Card.Body>
                
@@ -41,7 +41,7 @@ function Testimonials() {
               <Card.Title>Benny Varghese</Card.Title>
               <Card.Title>Wego Holiday</Card.Title>
             </Card>
-            <Card className="custom-card">
+            <Card className="custom-cards-testimonials">
               
               <Card.Body>
                 
@@ -60,7 +60,7 @@ function Testimonials() {
         {/* Carousel Item 2 */}
         <Carousel.Item>
           <div className="d-flex justify-content-between">
-          <Card className="custom-card">
+          <Card className="custom-cards-testimonials">
               
               <Card.Body>
                
@@ -72,7 +72,7 @@ function Testimonials() {
               <Card.Title>Pradeepan K</Card.Title>
               <Card.Title>Arreta Engineering Solutions</Card.Title>
             </Card>
-            <Card className="custom-card">
+            <Card className="custom-cards-testimonials">
               
               <Card.Body>
                
@@ -84,7 +84,7 @@ function Testimonials() {
               <Card.Title>Sajitha Madathil</Card.Title>
               <Card.Title>Attakkalam</Card.Title>
             </Card>
-            <Card className="custom-card">
+            <Card className="custom-cards-testimonials">
               
               <Card.Body>
                 
@@ -102,7 +102,7 @@ function Testimonials() {
           </div>
         </Carousel.Item>
 
-        {/* Repeat similarly for other Carousel Items */}
+        
       </Carousel>
     </div>
   );

@@ -14,6 +14,7 @@ import './css/Clients.css';
 function Clients() {
   return (
     <div className="container mt-5">
+      <section id="clients">
       <Card.Title className="clients">Our Clients</Card.Title>
       <Carousel>
         
@@ -63,6 +64,7 @@ function Clients() {
 
         
       </Carousel>
+      </section>
     </div>
   );
 }

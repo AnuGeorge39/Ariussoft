@@ -19,7 +19,7 @@ function Footer() {
             <Nav className="flex-column">
             <Nav.Link href="#services" className="text-light">Services</Nav.Link>
             <Nav.Link href="/contact" className="text-light">Contact</Nav.Link>
-              <Nav.Link href="/about" className="text-light">About</Nav.Link>
+              <Nav.Link href="#aboutus" className="text-light">About</Nav.Link>
             </Nav>
           </Col>
           <Col md={4}>

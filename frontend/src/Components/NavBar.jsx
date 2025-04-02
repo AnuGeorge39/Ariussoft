@@ -48,7 +48,7 @@ function NavBar() {
               </NavDropdown>
               
             <NavDropdown title="FOR" id="collapsible-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Clients</NavDropdown.Item>
+            <NavDropdown.Item href="#clients">Clients</NavDropdown.Item>
             </NavDropdown>
             
             <NavDropdown title="YOU" id="collapsible-nav-dropdown">
