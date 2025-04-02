@@ -4,6 +4,7 @@ import About_us from '../Components/About_us.jsx';
 import Clients from  '../Components/Clients.jsx';
 import Testimonials from '../Components/Testimonials.jsx';
 import Services from '../Components/Services.jsx';
+import Footer from '../Components/Footer.jsx';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Services/>
         <Clients/>
         <Testimonials/>
+        <Footer/>
         
         </div>
   )

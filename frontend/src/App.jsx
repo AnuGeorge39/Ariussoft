@@ -19,7 +19,7 @@ import CoreTeam from './Components/Core-Team.jsx';
 import Testimonialswe from './Components/Testimonials-we.jsx';
 import ContactYou from './Components/Contact-You.jsx';
 import './App.css'
-import Home from './pages/Home'
+import Home from './pages/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 

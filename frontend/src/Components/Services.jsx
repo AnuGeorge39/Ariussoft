@@ -1,13 +1,18 @@
 import React from 'react';
 import { Carousel, Card, Button } from 'react-bootstrap';
+import {useNavigate} from  'react-router-dom';
 import Slide_1 from '../assets/Images/img1.jpg';
 import Slide_2 from '../assets/Images/img2.jpg';
 import Slide_3 from '../assets/Images/img3.jpg';
 import Slide_4 from '../assets/Images/img4.jpg';
-import Slide_5 from '../assets/Images/img5.jpg';
-import './css/Services.css'; // Importing the CSS file
+import './css/Services.css'; 
 
 function Services() {
+  const navigate = useNavigate();
+  
+  const handleClick = () => {
+    navigate('/search-engine-optimization');
+  };
   return (
     <div className="container mt-5">
       <Card.Title className="services">Our Services</Card.Title>
@@ -22,7 +27,7 @@ function Services() {
                 <Card.Text>
                   Ariussoft enhances online visibility with targeted SEO strategies, including keyword optimization and link building.
                 </Card.Text>
-                <Button variant="primary">Learn More</Button>
+                <Button variant="primary" onClick={handleClick}>Learn More</Button>
               </Card.Body>
             </Card>
             <Card className="custom-card">
@@ -98,7 +103,7 @@ function Services() {
                 <Card.Text>
                   Ariussoft enhances online visibility with targeted SEO strategies, including keyword optimization and link building.
                 </Card.Text>
-                <Button variant="primary">Learn More</Button>
+                <Button variant="primary" onClick={handleClick}>Learn More</Button>
               </Card.Body>
             </Card>
           </div>
