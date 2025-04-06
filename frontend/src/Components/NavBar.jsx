@@ -8,8 +8,8 @@ function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container className='d-flex align-items-center justify-content-around  '>
-      <Navbar.Brand href="#home" className="text-center">
-  <h1 className="m-0 text-info" style={{ wordSpacing: "-1px" }}>ariussoft</h1>
+      <Navbar.Brand as={Link} to="/" className="text-center">
+      <h1 className="m-0 text-info" style={{ wordSpacing: "-1px" }}>ariussoft</h1>
   <span style={{ fontSize: "1rem", wordSpacing: "-1px" }}>Infotech Pvt Ltd</span>
 </Navbar.Brand>
 
