@@ -3,10 +3,6 @@ import './css/Banner.css';
 import Contactform from '../Components/ContactForm.jsx';
 import FAQ from '../Components/FAQ.jsx';
 import BannerImage from "../assets/Images/img4.jpg";
-import Footer from './Footer.jsx';
-
-
-
 
 function WebSiteDesign(){
   return (
@@ -57,7 +53,6 @@ function WebSiteDesign(){
    <FAQ/>
    </div>
     <Contactform/>
-    <Footer/>
     </>
    
   );

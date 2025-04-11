@@ -1,11 +1,10 @@
 import React from 'react';
 import { Container, Row, Col, Nav } from 'react-bootstrap';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'; 
-import Services from './Services';
 
 function Footer() {
   return (
-    <footer className="bg-dark text-light py-4">
+    <footer className="bg-dark text-light py-6">
       <Container>
         <Row>
           <Col md={4}>

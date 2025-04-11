@@ -2,9 +2,6 @@ import React from 'react';
 import './css/Banner.css';
 import Contactform from '../Components/ContactForm.jsx';
 import BannerImage from "../assets/Images/img3.jpg";
-import Footer from './Footer.jsx';
-
-
 
 function WebHosting(){
   return (
@@ -41,7 +38,6 @@ function WebHosting(){
      
    </div>
     <Contactform/>
-    <Footer/>
     </>
    
   );

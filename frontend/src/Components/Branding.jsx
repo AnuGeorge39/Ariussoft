@@ -51,7 +51,6 @@ function Branding(){
       </ul>
    </div>
     <Contactform/>
-    <Footer/>
     </>
    
   );

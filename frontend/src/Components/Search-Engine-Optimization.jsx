@@ -45,7 +45,7 @@ function SearchEngineOptimization(){
    <FAQ/>
    </div>
     <Contactform/>
-    <Footer/>
+    
     </>
    
   );

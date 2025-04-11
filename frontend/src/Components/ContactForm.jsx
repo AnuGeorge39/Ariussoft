@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "./Footer";
 
 
 const ContactForm = () => {
@@ -32,7 +33,9 @@ const ContactForm = () => {
         </div>
         <button type="submit" className="btn btn-primary">Submit</button>
       </form>
+      <Footer/>
     </div>
+    
   );
 };
 

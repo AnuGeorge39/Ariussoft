@@ -10,8 +10,8 @@ import './css/Services.css';
 function Services() {
   const navigate = useNavigate();
   
-  const handleClick = () => {
-    navigate('/search-engine-optimization');
+  const SEOhandleClick = () => {
+    navigate('./search-engine-optimization');
   };
   return (
     <div className="container mt-5">
@@ -29,7 +29,7 @@ function Services() {
                 <Card.Text>
                   Ariussoft enhances online visibility with targeted SEO strategies, including keyword optimization and link building.
                 </Card.Text>
-                <Button variant="primary" onClick={handleClick}>Learn More</Button>
+                <Button variant="primary" onClick={SEOhandleClick}>Learn More</Button>
               </Card.Body>
             </Card>
             <Card className="custom-card">
@@ -105,7 +105,7 @@ function Services() {
                 <Card.Text>
                   Ariussoft enhances online visibility with targeted SEO strategies, including keyword optimization and link building.
                 </Card.Text>
-                <Button variant="primary" onClick={handleClick}>Learn More</Button>
+                <Button variant="primary" onClick={SEOhandleClick}>Learn More</Button>
               </Card.Body>
             </Card>
           </div>
