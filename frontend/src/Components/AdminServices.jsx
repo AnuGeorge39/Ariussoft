@@ -17,7 +17,7 @@ export default function AdminServices() {
       const res = await axios.get('http://localhost:5000/api/services');
       setServices(res.data);
     } catch (err) {
-      setMessage('Failed to fetch services');
+      setMessage('');
     }
   };
 
@@ -54,7 +54,7 @@ export default function AdminServices() {
       setMessage('Service added!');
       fetchServices();
     } catch (err) {
-      setMessage('Failed to add service');
+      setMessage('');
     }
   };
 
