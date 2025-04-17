@@ -1,132 +1,103 @@
-import React, { useEffect, useState } from 'react';
-import { Form, Button, Card } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './css/Services.css';
 
-function AdminServices() {
+export default function AdminServices() {
   const [services, setServices] = useState([]);
-  const [formData, setFormData] = useState({ title: '', description: '', image: '', link: '' });
-  const [editingId, setEditingId] = useState(null);
+  const [form, setForm] = useState({ title: '', description: '', image: '' });
+  const [imageFile, setImageFile] = useState(null);
+  const [message, setMessage] = useState('');
 
+  // Fetch services on mount
   useEffect(() => {
     fetchServices();
   }, []);
 
-  const fetchServices = () => {
-    axios.get('http://localhost:5000/api/services')
-      .then(res => setServices(res.data))
-      .catch(err => console.error(err));
+  const fetchServices = async () => {
+    try {
+      const res = await axios.get('http://localhost:5000/api/services');
+      setServices(res.data);
+    } catch (err) {
+      setMessage('Failed to fetch services');
+    }
   };
 
   const handleChange = (e) => {
-    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+    setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleImageChange = (e) => {
+    setImageFile(e.target.files[0]);
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (editingId) {
-      axios.put(`http://localhost:5000/api/services/${editingId}`, formData)
-        .then(() => {
-          fetchServices();
-          resetForm();
-        });
-    } else {
-      axios.post('http://localhost:5000/api/services', formData)
-        .then(() => {
-          fetchServices();
-          resetForm();
-        });
+    let imageUrl = '';
+    if (imageFile) {
+      const data = new FormData();
+      data.append('image', imageFile);
+      try {
+        const res = await axios.post('http://localhost:5000/api/uploads', data);
+        imageUrl = res.data.imageUrl || '';
+      } catch (err) {
+        setMessage('Image upload failed');
+        return;
+      }
     }
-  };
-
-  const handleEdit = (service) => {
-    setFormData(service);
-    setEditingId(service._id);
-  };
-
-  const handleDelete = (id) => {
-    if (window.confirm('Are you sure you want to delete this service?')) {
-      axios.delete(`http://localhost:5000/api/services/${id}`)
-        .then(() => fetchServices());
+    try {
+      await axios.post('http://localhost:5000/api/services', {
+        title: form.title,
+        description: form.description,
+        image: imageUrl
+      });
+      setForm({ title: '', description: '', image: '' });
+      setImageFile(null);
+      setMessage('Service added!');
+      fetchServices();
+    } catch (err) {
+      setMessage('Failed to add service');
     }
-  };
-
-  const resetForm = () => {
-    setFormData({ title: '', description: '', image: '', link: '' });
-    setEditingId(null);
   };
 
   return (
-    <div className="container mt-5">
-      <section id="admin-services">
-        <h2>Admin Panel - Manage Services</h2>
-
-        {/* Service Form for CRUD operations */}
-        <Form onSubmit={handleSubmit} className="mb-4">
-          <Form.Group className="mb-2">
-            <Form.Control
-              type="text"
-              name="title"
-              placeholder="Title"
-              value={formData.title}
-              onChange={handleChange}
-              required
-            />
-          </Form.Group>
-          <Form.Group className="mb-2">
-            <Form.Control
-              as="textarea"
-              name="description"
-              placeholder="Description"
-              value={formData.description}
-              onChange={handleChange}
-              required
-            />
-          </Form.Group>
-          <Form.Group className="mb-2">
-            <Form.Control
-              type="text"
-              name="image"
-              placeholder="Image filename (e.g., img1.jpg)"
-              value={formData.image}
-              onChange={handleChange}
-              required
-            />
-          </Form.Group>
-          <Form.Group className="mb-2">
-            <Form.Control
-              type="text"
-              name="link"
-              placeholder="Link path (e.g., /search-engine-optimization)"
-              value={formData.link}
-              onChange={handleChange}
-              required
-            />
-          </Form.Group>
-          <Button type="submit" variant={editingId ? "warning" : "success"}>
-            {editingId ? "Update Service" : "Add Service"}
-          </Button>
-          {editingId && <Button variant="secondary" onClick={resetForm} className="ms-2">Cancel</Button>}
-        </Form>
-
-        {/* Display existing services for editing and deletion */}
-        <h3>Existing Services</h3>
-        <div className="d-flex flex-wrap">
-          {services.map((service) => (
-            <Card key={service._id} className="custom-card m-2" style={{ width: '18rem' }}>
-              <Card.Img variant="top" src={(`../assets/Images/${service.image}`)} />
-              <Card.Body>
-                <h5>{service.title}</h5>
-                <Card.Text>{service.description}</Card.Text>
-                <Button variant="info" size="sm" onClick={() => handleEdit(service)}>Edit</Button>{' '}
-                <Button variant="danger" size="sm" onClick={() => handleDelete(service._id)}>Delete</Button>
-              </Card.Body>
-            </Card>
-          ))}
-        </div>
-      </section>
+    <div style={{ maxWidth: 600, margin: '40px auto' }}>
+      <h2>Add Service</h2>
+      {message && <div style={{ color: 'red', marginBottom: 10 }}>{message}</div>}
+      <form onSubmit={handleSubmit} style={{ marginBottom: 30 }}>
+        <input
+          type="text"
+          name="title"
+          placeholder="Title"
+          value={form.title}
+          onChange={handleChange}
+          required
+          style={{ width: '100%', marginBottom: 10 }}
+        />
+        <textarea
+          name="description"
+          placeholder="Description"
+          value={form.description}
+          onChange={handleChange}
+          required
+          style={{ width: '100%', marginBottom: 10 }}
+        />
+        <input
+          type="file"
+          accept="image/*"
+          onChange={handleImageChange}
+          style={{ marginBottom: 10 }}
+        />
+        <button type="submit">Add Service</button>
+      </form>
+      <h2>Services</h2>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16 }}>
+        {services.map((srv) => (
+          <div key={srv._id} style={{ border: '1px solid #ccc', borderRadius: 8, padding: 16, width: 200 }}>
+            {srv.image && <img src={srv.image.startsWith('http') ? srv.image : `http://localhost:5000${srv.image}`} alt="service" style={{ width: '100%', height: 100, objectFit: 'cover', marginBottom: 8 }} />}
+            <h4>{srv.title}</h4>
+            <p>{srv.description}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
-
-export default AdminServices;

@@ -34,8 +34,7 @@ function Services() {
               <div className="d-flex justify-content-between">
                 {group.map((service, i) => (
                   <Card key={i} className="custom-card">
-                   <Card.Img variant="top" src={service.image} />
-
+                   <Card.Img variant="top" src={`http://localhost:5000${service.image}`} />
                     <Card.Body>
                       <h5>{service.title}</h5>
                       <Card.Text>{service.description}</Card.Text>
